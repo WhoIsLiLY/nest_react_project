@@ -2,6 +2,7 @@ import { Module, OnModuleInit } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { TypeOrmModule } from '@nestjs/typeorm'; // Add this
 import { DatabaseModule } from './modules/database/database.module';
 import { CustomLoggerModule } from './modules/custom-logger/custom-logger.module';
 import { CustomLoggerService } from './modules/custom-logger/logger.service';
